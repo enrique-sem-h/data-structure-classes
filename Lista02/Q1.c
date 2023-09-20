@@ -1,3 +1,4 @@
+/*Questão 1 - Escreva um programa em C que ordena um array de inteiros usando o algoritmo de ordenação por bolha.*/
 #include <stdio.h>
 #include <stdlib.h>
 
