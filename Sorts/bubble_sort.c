@@ -20,7 +20,7 @@ int main(){
     printf("\n");
 
     for(i = 0; i < MAX; i++){
-        for(n = 0; n < 4; n++){
+        for(n = 0; n < MAX - 1; n++){
         if (array[n] > array[n + 1]){
             aux = array[n];
             array[n] = array[n + 1];
