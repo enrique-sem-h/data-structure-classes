@@ -1,3 +1,5 @@
+/*Escreva um programa em C que solicite o tamanho da lista e possua um método de Inserir Lista Ordenada,
+que cria a lista de forma ordenada.*/
 #include <stdio.h>
 #define MAXSIZE 100
 
@@ -24,9 +26,10 @@ void orderedInsert(int *list, int *size, int element){
 
 int main(){
     int list[MAXSIZE];
-    int size = 0;
+    int size;
 
     printf("Type in the list's size: ");
+    scanf("%d", &size);
 
     orderedInsert(list, &size, 2);
     orderedInsert(list, &size, 0);

@@ -41,11 +41,12 @@ void append(Fan *Fan, const char *part){
     }
 }
 
-int delete(Fan *Fan){
+void delete(Fan *Fan){
     if(isEmpty(Fan)){
         printf("Your Fan is empty\n");
     } else {
-    Fan->part[--Fan->top];
+    memset(Fan->part[Fan->top], 0, sizeof(Fan->part[Fan->top]));
+    Fan->top--;
     }
 }
 
